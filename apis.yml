@@ -1,0 +1,36 @@
+aid: cleanshelf
+name: Cleanshelf
+description: >-
+  Cleanshelf (acquired by Zylo) was a SaaS management platform providing
+  software license optimization, spend tracking, and shadow IT discovery
+  for enterprises looking to control their SaaS portfolio costs.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - SaaS Management
+  - License Management
+  - Spend Optimization
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/cleanshelf/refs/heads/main/apis.yml
+created: '2026-03-27'
+modified: '2026-03-27'
+specificationVersion: '0.19'
+apis:
+  - aid: cleanshelf:cleanshelf
+    name: Cleanshelf
+    description: >-
+      Cleanshelf (acquired by Zylo) was a SaaS management platform providing
+      software license optimization, spend tracking, and shadow IT discovery.
+    humanURL: https://zylo.com
+    tags:
+      - SaaS Management
+      - License Management
+    properties:
+      - type: Documentation
+        url: https://zylo.com
+common:
+  - type: Website
+    url: https://zylo.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
