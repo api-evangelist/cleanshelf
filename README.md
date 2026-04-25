@@ -49,8 +49,8 @@ Legacy v1.0 endpoints retained from the original Cleanshelf product line. New in
 - [Terms of Service](https://zylo.com/legal/)
 - [Support](https://help.zylo.com/)
 - [JSON-LD Context](json-ld/cleanshelf-context.jsonld)
-- [Spectral Ruleset](spectral/cleanshelf-spectral.yml)
-- [Naftiko Capabilities](naftiko/cleanshelf-capabilities.yml)
+- [Spectral Ruleset](rules/cleanshelf-rules.yml)
+- [Naftiko Capabilities](capabilities/cleanshelf-capabilities.yml)
 
 ## Maintainers
 
