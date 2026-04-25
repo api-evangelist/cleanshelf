@@ -1,0 +1,30 @@
+capabilities:
+  - id: cleanshelf.discover-saas
+    name: Discover SaaS applications
+    description: >-
+      Inventory the SaaS applications used across the enterprise,
+      including shadow IT discovery from financial and SSO data.
+    apis:
+      - cleanshelf:zylo-api
+  - id: cleanshelf.optimize-licenses
+    name: Optimize software licenses
+    description: >-
+      Track license entitlements, utilization, and reclaim opportunities
+      to right-size SaaS subscriptions.
+    apis:
+      - cleanshelf:zylo-api
+  - id: cleanshelf.manage-spend
+    name: Manage SaaS spend
+    description: >-
+      Monitor SaaS spend, track renewals, and surface savings across
+      the enterprise software portfolio.
+    apis:
+      - cleanshelf:zylo-api
+  - id: cleanshelf.maintain-legacy-integrations
+    name: Maintain legacy Cleanshelf-era integrations
+    description: >-
+      Continue to operate v1.0 endpoints for integrations that pre-date
+      the Zylo acquisition while planning a migration to the modern
+      Zylo Platform API.
+    apis:
+      - cleanshelf:zylo-legacy-api

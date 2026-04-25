@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "https://apievangelist.com/vocab/cleanshelf/",
+    "schema": "https://schema.org/",
+    "zylo": "https://zylo.com/vocab/",
+    "Application": "schema:SoftwareApplication",
+    "License": "zylo:SoftwareLicense",
+    "Subscription": "zylo:SaaSSubscription",
+    "Vendor": "schema:Organization",
+    "Contract": "zylo:Contract",
+    "User": "schema:Person",
+    "Department": "schema:OrganizationRole",
+    "name": "schema:name",
+    "description": "schema:description",
+    "renewalDate": "zylo:renewalDate",
+    "annualSpend": "zylo:annualSpend",
+    "createdAt": "schema:dateCreated",
+    "updatedAt": "schema:dateModified"
+  }
+}
