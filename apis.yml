@@ -39,7 +39,7 @@ apis:
       - url: https://developer.zylo.com/
         type: Documentation
       - url: https://developer.zylo.com/reference
-        type: API Reference
+        type: APIReference
     description: >-
       The Zylo Platform API is the successor to Cleanshelf. It exposes
       SaaS application discovery, inventory, license, contract, and
@@ -71,13 +71,13 @@ common:
     url: https://app.zylo.com/
   - type: Portal
     url: https://developer.zylo.com/
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://zylo.com/privacy-policy/
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://zylo.com/legal/
   - type: Support
     url: https://help.zylo.com/
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/cleanshelf-context.jsonld
   - type: Spectral
     url: rules/cleanshelf-rules.yml
