@@ -61,6 +61,8 @@ apis:
       product line. New integrations should use the modern Zylo
       Platform API.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/cleanshelf
   - type: Website
     url: https://zylo.com/
   - type: Acquirer
