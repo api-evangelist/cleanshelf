@@ -8,6 +8,8 @@ access: 3rd-Party
 position: Consumer
 specificationVersion: '0.19'
 status: Acquired
+deprecated: true
+deprecatedReason: "Cleanshelf has been acquired and is no longer offered independently. Retained for historical reference."
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Acquired
@@ -61,6 +63,10 @@ apis:
       product line. New integrations should use the modern Zylo
       Platform API.
 common:
+  - type: TrustCenter
+    url: security/cleanshelf-trust-center.yml
+  - type: DomainSecurity
+    url: security/cleanshelf-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/cleanshelf
   - type: Website
