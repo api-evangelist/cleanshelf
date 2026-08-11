@@ -101,8 +101,6 @@ common:
     url: json-ld/cleanshelf-context.jsonld
   - type: Spectral
     url: rules/cleanshelf-rules.yml
-  - type: X-NaftikoCapabilities
-    url: capabilities/cleanshelf-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
