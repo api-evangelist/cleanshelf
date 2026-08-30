@@ -86,6 +86,11 @@ apis:
       product line. New integrations should use the modern Zylo
       Platform API.
 common:
+  - type: ParentCompany
+    url: https://apis.io/providers/zylo/
+    name: Zylo
+    x-relationship: acquired
+    x-evidence: "Cleanshelf was acquired by Zylo in 2021 and its capabilities have been folded into the Zylo enterprise SaaS spend optimization platform."
   - type: TrustCenter
     url: security/cleanshelf-trust-center.yml
   - type: DomainSecurity
