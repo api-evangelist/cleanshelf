@@ -1,0 +1,67 @@
+specification: API Commons Lifecycle
+specificationVersion: '0.1'
+provider: Cleanshelf
+providerId: cleanshelf
+generated: '2026-09-05'
+method: searched
+source: >-
+  LeanIX acquisition press release (24 March 2021), the LeanIX blog post
+  announcing the product transition, and live probes of cleanshelf.com.
+description: >-
+  Lifecycle record for the Cleanshelf product and its API. Cleanshelf is
+  end-of-life: the company was acquired and the product was folded into the
+  acquirer's platform. There is no versioning policy, deprecation header
+  policy, SLA or status page to record, because there is no running Cleanshelf
+  service.
+status: retired
+retired: true
+retirement:
+  event: acquisition
+  acquirer: LeanIX
+  announced: '2021-03-24'
+  announcement_url: https://www.leanix.net/en/company/press/leanix-acquire-saas-management-provider-cleanshelf
+  successor_product: LeanIX SaaS Intelligence
+  successor_available_from: '2021-05-01'
+  successor_note: >-
+    SaaS discovery and cataloging was also made available as a component of the
+    LeanIX Application Portfolio Management module in Q2 2021. LeanIX was later
+    acquired by SAP; the LeanIX API surface is profiled separately under the
+    leanix record.
+  successor_record: https://apis.io/providers/leanix/
+domain_disposition:
+  domain: cleanshelf.com
+  http_status: 301
+  redirects_to: https://www.leanix.net/
+  operator_evidence: >-
+    TLS certificate subject O=SAP SE, CN=leanix.info; nameservers nsp1.sap.de,
+    nsp3.sap.net, nsp4.sap.asia.
+  subdomains_resolving: []
+  subdomains_checked:
+  - api.cleanshelf.com
+  - app.cleanshelf.com
+  - docs.cleanshelf.com
+versioning:
+  policy: null
+  note: No Cleanshelf versioning policy is published; the product no longer exists.
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  deprecation_header: unknown
+  note: >-
+    The product itself is deprecated. The acquirer announced a named successor
+    and a date, which is more migration guidance than most retired products
+    publish, but no RFC 8594 Sunset/Deprecation header behavior can be observed
+    because no Cleanshelf API host resolves.
+sla: null
+status_page: null
+deprecated_operations: []
+evidence:
+- url: https://www.leanix.net/en/company/press/leanix-acquire-saas-management-provider-cleanshelf
+  status: 200
+- url: https://www.leanix.net/en/blog/saas-management-provider-cleanshelf-joins-leanix
+  status: 200
+- url: https://cleanshelf.com/
+  status: 301
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

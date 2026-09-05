@@ -1,0 +1,65 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Anonymous HTTP probes of every host this record knows. cleanshelf.com and
+  www.cleanshelf.com are the only hosts Cleanshelf ever controlled; both now
+  301 to https://www.leanix.net/ (SAP LeanIX acquired Cleanshelf in March 2021)
+  while still serving a real RFC 9116 security.txt from the SAP edge.
+note: >-
+  Only /.well-known/security.txt returns a document. Every other probed path
+  answers 301 to the LeanIX homepage, which is a redirect, not a document. No
+  api.cleanshelf.com, app.cleanshelf.com or docs.cleanshelf.com host resolves
+  (DNS NXDOMAIN), so there is no API or docs host left to probe.
+hosts:
+  - host: cleanshelf.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: well-known/cleanshelf-security.txt
+        content_type: text/plain
+        note: >-
+          Real RFC 9116 document. Contact is https://www.sap.com/report-a-vulnerability,
+          which confirms the domain is now operated by SAP via LeanIX. The Expires
+          field (2026-01-30T18:29:00.000Z) is in the past, so the file is stale
+          under RFC 9116 section 2.5.5.
+      - path: /.well-known/openid-configuration
+        status: 301
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+      - path: /.well-known/api-catalog
+        status: 301
+      - path: /.well-known/ai-plugin.json
+        status: 301
+      - path: /.well-known/agent-card.json
+        status: 301
+      - path: /.well-known/agent.json
+        status: 301
+  - host: www.cleanshelf.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: well-known/cleanshelf-security.txt
+        content_type: text/plain
+        note: Identical body to the apex host.
+      - path: /.well-known/openid-configuration
+        status: 301
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+      - path: /.well-known/api-catalog
+        status: 301
+      - path: /.well-known/ai-plugin.json
+        status: 301
+      - path: /.well-known/agent-card.json
+        status: 301
+      - path: /.well-known/agent.json
+        status: 301
+unresolved_hosts:
+  - host: api.cleanshelf.com
+    result: DNS does not resolve
+  - host: app.cleanshelf.com
+    result: DNS does not resolve
+  - host: docs.cleanshelf.com
+    result: DNS does not resolve
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

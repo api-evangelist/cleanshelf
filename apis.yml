@@ -2,37 +2,43 @@ aid: cleanshelf
 name: Cleanshelf
 url: https://raw.githubusercontent.com/api-evangelist/cleanshelf/refs/heads/main/apis.yml
 deliveryModel:
-  model: saas
+  model: none
   open_source: false
-  commercial: true
+  commercial: false
   callable_host: false
-  label: Hosted service · you call their endpoint
-  confidence: medium
+  label: Discontinued · product absorbed by the acquirer
+  confidence: high
   source:
-  - pricing
-  generated: '2026-08-28'
-  method: derived
+  - probe
+  - acquisition-announcement
+  generated: '2026-09-05'
+  method: probed
 accessModel:
-  pricing: freemium
-  onboarding: unknown
+  pricing: none
+  onboarding: none
   trial: false
   try_now: false
   public: false
-  label: Freemium
-  confidence: medium
+  label: Discontinued — no plans, signup or API
+  confidence: high
   source:
-  - plans
-  generated: '2026-07-22'
-  method: derived
+  - probe
+  generated: '2026-09-05'
+  method: probed
 created: '2026-03-27'
-modified: '2026-04-23'
+modified: '2026-09-05'
 type: Index
 access: 3rd-Party
 position: Consuming
 specificationVersion: '0.23'
 status: Acquired
 deprecated: true
-deprecatedReason: "Cleanshelf has been acquired and is no longer offered independently. Retained for historical reference."
+deprecatedReason: >-
+  Cleanshelf was acquired by LeanIX on 24 March 2021 and its technology was
+  relaunched on 1 May 2021 as LeanIX SaaS Intelligence. LeanIX was subsequently
+  acquired by SAP. cleanshelf.com now 301-redirects to www.leanix.net and is
+  served from SAP infrastructure; the Cleanshelf product, brand and API no
+  longer exist independently.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cleanshelf.png
 tags:
   - Acquired
@@ -43,76 +49,60 @@ tags:
   - Software Asset Management
   - Spend Optimization
 description: >-
-  Cleanshelf was a SaaS management platform that helped enterprises
-  discover and inventory their SaaS applications, optimize software
-  licenses, track spend, and surface shadow IT. Cleanshelf was acquired
-  by Zylo in 2021 and its capabilities have been folded into the Zylo
-  enterprise SaaS spend optimization platform. The Cleanshelf product
-  brand and standalone API are no longer maintained; equivalent
-  programmatic capabilities are now exposed through the Zylo Developer
-  Hub at developer.zylo.com.
-apis:
-  - aid: cleanshelf:zylo-api
-    name: Zylo Platform API (successor)
-    tags:
-      - License Management
-      - SaaS Management
-      - Spend
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.zylo.com/
-    properties:
-      - url: https://developer.zylo.com/
-        type: Documentation
-      - url: https://developer.zylo.com/reference
-        type: APIReference
-    description: >-
-      The Zylo Platform API is the successor to Cleanshelf. It exposes
-      SaaS application discovery, inventory, license, contract, and
-      spend data so enterprises can integrate Zylo with finance,
-      procurement, and IT systems. A legacy v1.0 API remains documented
-      for older Cleanshelf-era integrations.
-  - aid: cleanshelf:zylo-legacy-api
-    name: Zylo Legacy API (Cleanshelf-era)
-    tags:
-      - Cleanshelf
-      - Legacy
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.zylo.com/v1.0/reference/zylo-legacy-api
-    properties:
-      - url: https://developer.zylo.com/v1.0/reference/zylo-legacy-api
-        type: Documentation
-    description: >-
-      Legacy v1.0 endpoints retained from the original Cleanshelf
-      product line. New integrations should use the modern Zylo
-      Platform API.
+  Cleanshelf was a San Francisco enterprise SaaS management platform that
+  discovered and inventoried an organization's SaaS applications, optimized
+  software licenses, tracked subscription spend, and surfaced shadow IT. At
+  acquisition it claimed more than 3,000 integrations and managed roughly $700
+  million in SaaS spend for its customers. LeanIX acquired Cleanshelf on 24
+  March 2021 and relaunched the technology on 1 May 2021 as LeanIX SaaS
+  Intelligence, with SaaS discovery and cataloging folded into the LeanIX
+  Application Portfolio Management module; LeanIX itself was later acquired by
+  SAP. Cleanshelf publishes no API, developer portal or documentation of its
+  own today — cleanshelf.com 301-redirects to www.leanix.net and its former
+  api, app and docs hostnames no longer resolve. The successor API surface is
+  profiled separately under the LeanIX record.
+apis: []
 common:
   - type: ParentCompany
-    url: https://apis.io/providers/zylo/
-    name: Zylo
+    url: https://apis.io/providers/leanix/
+    name: LeanIX
     x-relationship: acquired
-    x-evidence: "Cleanshelf was acquired by Zylo in 2021 and its capabilities have been folded into the Zylo enterprise SaaS spend optimization platform."
-  - type: TrustCenter
-    url: security/cleanshelf-trust-center.yml
-  - type: DomainSecurity
-    url: security/cleanshelf-domain-security.yml
+    x-evidence: >-
+      LeanIX announced the acquisition of Cleanshelf Inc. on 24 March 2021 and
+      relaunched the technology as LeanIX SaaS Intelligence on 1 May 2021
+      (https://www.leanix.net/en/company/press/leanix-acquire-saas-management-provider-cleanshelf,
+      HTTP 200). LeanIX is now part of SAP; cleanshelf.com serves a security.txt
+      whose Contact is https://www.sap.com/report-a-vulnerability.
+  - type: Website
+    url: https://www.leanix.net/en/
+  - type: Acquirer
+    url: https://www.leanix.net/en/
+  - type: Acquisition Announcement
+    url: https://www.leanix.net/en/company/press/leanix-acquire-saas-management-provider-cleanshelf
   - type: LinkedIn
     url: https://www.linkedin.com/company/cleanshelf
-  - type: Website
-    url: https://zylo.com/
-  - type: Acquirer
-    url: https://zylo.com/
-  - type: Acquisition Announcement
-    url: https://zylo.com/news/zylo-acquires-cleanshelf/
-  - type: Application
-    url: https://app.zylo.com/
-  - type: Portal
-    url: https://developer.zylo.com/
-  - type: PrivacyPolicy
-    url: https://zylo.com/privacy-policy/
-  - type: TermsOfService
-    url: https://zylo.com/legal/
-  - type: Support
-    url: https://help.zylo.com/
+  - type: WellKnown
+    url: well-known/cleanshelf-well-known.yml
+  - type: SecurityTxt
+    url: well-known/cleanshelf-security.txt
+  - type: Security
+    url: security/cleanshelf-vulnerability-disclosure.yml
+  - type: VulnerabilityDisclosure
+    url: security/cleanshelf-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/cleanshelf-domain-security.yml
+  - type: Lifecycle
+    url: lifecycle/cleanshelf-lifecycle.yml
+  - type: Deprecation
+    url: lifecycle/cleanshelf-lifecycle.yml
+  - type: Conformance
+    url: conformance/cleanshelf-conformance.yml
+  - type: LLMsTxt
+    url: llms/cleanshelf-llms.txt
+  - type: Plans
+    url: plans/cleanshelf-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/cleanshelf-rate-limits.yml
   - type: JSONLD
     url: json-ld/cleanshelf-context.jsonld
   - type: Spectral
@@ -120,3 +110,39 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Cleanshelf was acquired by LeanIX on 24 March 2021 and relaunched as LeanIX
+    SaaS Intelligence, and the brand is now fully absorbed — cleanshelf.com and
+    www.cleanshelf.com 301 to www.leanix.net behind a certificate issued to
+    O=SAP SE, CN=leanix.info with sap.de nameservers, api/app/docs.cleanshelf.com
+    return NXDOMAIN, and the only document either host still serves is an expired
+    RFC 9116 security.txt whose contact is SAP's vulnerability reporting page.
+  evidence:
+    - url: https://cleanshelf.com/
+      status: 301
+    - url: https://www.cleanshelf.com/
+      status: 301
+    - url: https://cleanshelf.com/.well-known/security.txt
+      status: 200
+    - url: https://cleanshelf.com/openapi.json
+      status: 301
+    - url: https://cleanshelf.com/.well-known/api-catalog
+      status: 301
+    - url: https://cleanshelf.com/.well-known/agent-card.json
+      status: 301
+    - url: https://www.leanix.net/en/company/press/leanix-acquire-saas-management-provider-cleanshelf
+      status: 200
+    - url: https://api.github.com/orgs/cleanshelf
+      status: 404
+  checked: '2026-09-05'
+x-parent: leanix
+x-relationship: acquisition
+x-acquired: 2021

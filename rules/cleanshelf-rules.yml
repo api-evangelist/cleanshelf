@@ -9,7 +9,7 @@ rules:
       field: contact
       function: truthy
   cleanshelf-https-only:
-    description: All Zylo (Cleanshelf successor) API servers MUST use HTTPS.
+    description: All API servers MUST use HTTPS.
     severity: error
     given: $.servers[*].url
     then:

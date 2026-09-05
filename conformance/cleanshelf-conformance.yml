@@ -1,0 +1,57 @@
+specification: API Commons Conformance
+specificationVersion: '0.1'
+provider: Cleanshelf
+providerId: cleanshelf
+generated: '2026-09-05'
+method: probed
+source: Live probes of cleanshelf.com; no Cleanshelf API contract exists to derive from.
+description: >-
+  Cross-cutting standards conformance for Cleanshelf. The product is retired
+  and publishes no API contract, so almost every standard in this vocabulary is
+  not applicable rather than failed. The single observable standard is RFC 9116,
+  because the retained domain still serves a security.txt.
+conformance:
+- id: rfc9116
+  name: RFC 9116 — A File Format to Aid in Security Vulnerability Disclosure
+  conforms: false
+  evidence: https://cleanshelf.com/.well-known/security.txt
+  note: >-
+    The file is served (HTTP 200) and carries the two required fields, Contact
+    and Expires. It is nonetheless non-conformant today because Expires is
+    2026-01-30T18:29:00.000Z, which is in the past — RFC 9116 section 2.5.5
+    says such a file should not be used. It is also unsigned and carries no
+    Policy, Preferred-Languages or Canonical field.
+- id: oauth2
+  conforms: false
+  evidence: https://cleanshelf.com/.well-known/oauth-authorization-server
+  note: 301 to the LeanIX homepage; no authorization-server metadata is served.
+- id: oidc
+  conforms: false
+  evidence: https://cleanshelf.com/.well-known/openid-configuration
+  note: 301 to the LeanIX homepage; no OpenID provider metadata is served.
+- id: rfc9727
+  name: RFC 9727 — api-catalog well-known URI
+  conforms: false
+  evidence: https://cleanshelf.com/.well-known/api-catalog
+  note: 301 to the LeanIX homepage; no API catalog is served.
+not_applicable:
+- id: rfc9457
+  reason: No API contract is published, so no error envelope can be assessed.
+- id: json:api
+  reason: No API contract is published.
+- id: pagination
+  reason: No API contract is published.
+- id: idempotency
+  reason: No write surface exists; the product is retired.
+- id: odata
+  reason: No API contract is published.
+domain_standard:
+  market: SaaS management / software asset management
+  standard: null
+  note: >-
+    The SaaS-management market has no adopted interchange standard that a
+    contract could declare, and Cleanshelf publishes no contract in any case.
+    Recorded as absent, not as a failure.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

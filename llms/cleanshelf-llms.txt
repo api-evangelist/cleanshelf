@@ -1,0 +1,51 @@
+# Cleanshelf
+
+> Cleanshelf was a San Francisco enterprise SaaS management platform — SaaS
+> application discovery, license optimization, subscription spend tracking and
+> shadow-IT detection. It was acquired by LeanIX on 24 March 2021 and relaunched
+> on 1 May 2021 as LeanIX SaaS Intelligence. LeanIX was subsequently acquired by
+> SAP. **Cleanshelf publishes no API today.** This file exists so an agent
+> looking for a Cleanshelf API stops here instead of guessing.
+
+Generated: 2026-09-05
+Method: generated (from this repository's apis.yml and probed artifacts — Cleanshelf serves no llms.txt of its own; https://cleanshelf.com/llms.txt returns HTTP 301 to the LeanIX homepage)
+Maintainer: API Evangelist (kin@apievangelist.com) — independent third-party profile, not operated by the company
+
+## Status
+
+- Status: acquired, retired
+- Acquirer: LeanIX (24 March 2021)
+- Successor product: LeanIX SaaS Intelligence (from 1 May 2021); SaaS discovery and cataloging also shipped inside the LeanIX Application Portfolio Management module
+- Current operator of cleanshelf.com: SAP SE, via LeanIX — TLS certificate subject `O=SAP SE, CN=leanix.info`, nameservers `nsp1.sap.de`, `nsp3.sap.net`, `nsp4.sap.asia`
+- cleanshelf.com and www.cleanshelf.com: HTTP 301 to https://www.leanix.net/
+- api.cleanshelf.com, app.cleanshelf.com, docs.cleanshelf.com: do not resolve
+
+## APIs
+
+None. Cleanshelf has no public API, developer portal, OpenAPI, AsyncAPI, GraphQL SDL, MCP server, A2A agent card, SDK or package in any public registry. Do not construct a Cleanshelf endpoint; there is nothing to call.
+
+## Successor
+
+- LeanIX (SAP LeanIX) — https://www.leanix.net/en/
+- LeanIX developer documentation — https://help.sap.com/docs/leanix
+- LeanIX profile in this catalog — https://apis.io/providers/leanix/
+
+## Correction notice
+
+An earlier version of this profile attributed the Cleanshelf acquisition to Zylo and listed two "Zylo API" entries. That was wrong: Zylo is a competitor in the same market, not the acquirer. The acquirer is LeanIX. Corrected 2026-09-05.
+
+## Artifacts in this repository
+
+- [Well-known probe](well-known/cleanshelf-well-known.yml): every /.well-known/ path probed on both Cleanshelf hosts, with status codes
+- [security.txt](well-known/cleanshelf-security.txt): the one document still served (RFC 9116; Expires field has lapsed)
+- [Vulnerability disclosure](security/cleanshelf-vulnerability-disclosure.yml): reporting contact is SAP's
+- [Domain security](security/cleanshelf-domain-security.yml): TLS, SPF, DMARC, CAA, DNSSEC and nameserver evidence
+- [Lifecycle](lifecycle/cleanshelf-lifecycle.yml): the retirement record and successor pointer
+- [Conformance](conformance/cleanshelf-conformance.yml): what standards are observable on the retained domain
+- [Plans](plans/cleanshelf-plans-pricing.yml): none published
+- [Rate limits](rate-limits/cleanshelf-rate-limits.yml): none published
+
+## References
+
+- LeanIX acquisition press release — https://www.leanix.net/en/company/press/leanix-acquire-saas-management-provider-cleanshelf
+- LeanIX blog: Cleanshelf joins LeanIX — https://www.leanix.net/en/blog/saas-management-provider-cleanshelf-joins-leanix
