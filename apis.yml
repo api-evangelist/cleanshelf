@@ -112,8 +112,8 @@ maintainers:
     email: kin@apievangelist.com
 x-enrichment:
   date: '2026-09-05'
-  status: minimal
-  artifacts_added: 6
+  status: nochange
+  artifacts_added: 0
   pass: local-v3
 x-coverage:
   state: none
@@ -125,6 +125,10 @@ x-coverage:
     O=SAP SE, CN=leanix.info with sap.de nameservers, api/app/docs.cleanshelf.com
     return NXDOMAIN, and the only document either host still serves is an expired
     RFC 9116 security.txt whose contact is SAP's vulnerability reporting page.
+    A first-party source and package sweep found nothing either: there is no
+    cleanshelf GitHub organization (404) and no package named cleanshelf on npm,
+    PyPI, RubyGems, crates.io, Packagist, NuGet or Maven Central, so no SDK,
+    CLI or client library survives the shutdown to profile.
   evidence:
     - url: https://cleanshelf.com/
       status: 301
@@ -142,6 +146,12 @@ x-coverage:
       status: 200
     - url: https://api.github.com/orgs/cleanshelf
       status: 404
+    - url: https://registry.npmjs.org/-/v1/search?text=cleanshelf
+      status: 200
+    - url: https://pypi.org/pypi/cleanshelf/json
+      status: 404
+    - url: https://cleanshelf.com/llms.txt
+      status: 301
   checked: '2026-09-05'
 x-parent: leanix
 x-relationship: acquisition
