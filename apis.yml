@@ -26,7 +26,7 @@ accessModel:
   generated: '2026-09-05'
   method: probed
 created: '2026-03-27'
-modified: '2026-09-05'
+modified: '2026-10-06'
 type: Index
 access: 3rd-Party
 position: Consuming
@@ -63,6 +63,10 @@ description: >-
   profiled separately under the LeanIX record.
 apis: []
 common:
+  - url: https://www.leanix.net/en/blog
+    type: Blog
+  - url: https://www.leanix.net/en/blog/rss.xml
+    type: BlogRSS
   - type: ParentCompany
     url: https://apis.io/providers/leanix/
     name: LeanIX
