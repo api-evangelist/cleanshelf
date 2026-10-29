@@ -1,4 +1,4 @@
-# Cleanshelf (cleanshelf)
+# Cleanshelf
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,61 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cleanshelf was a SaaS management platform that helped enterprises discover and inventory their SaaS applications, optimize software licenses, track spend, and surface shadow IT. Cleanshelf was acquired by Zylo in 2021 and its capabilities have been folded into the Zylo enterprise SaaS spend optimization platform. The Cleanshelf product brand and standalone API are no longer maintained; equivalent programmatic capabilities are now exposed through the Zylo Developer Hub at developer.zylo.com.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/cleanshelf/refs/heads/main/apis.yml)
+**Status:** Cleanshelf was acquired by LeanIX on 24 March 2021 and its technology was relaunched on 1 May 2021 as LeanIX SaaS Intelligence. LeanIX was subsequently acquired by SAP. cleanshelf.com now 301-redirects to www.leanix.net and is served from SAP infrastructure; the Cleanshelf product, brand and API no longer exist independently.
 
-## Scope
+Cleanshelf was a San Francisco enterprise SaaS management platform that discovered and inventoried an organization's SaaS applications, optimized software licenses, tracked subscription spend, and surfaced shadow IT. At acquisition it claimed more than 3,000 integrations and managed roughly $700 million in SaaS spend for its customers. LeanIX acquired Cleanshelf on 24 March 2021 and relaunched the technology on 1 May 2021 as LeanIX SaaS Intelligence, with SaaS discovery and cataloging folded into the LeanIX Application Portfolio Management module; LeanIX itself was later acquired by SAP. Cleanshelf publishes no API, developer portal or documentation of its own today — cleanshelf.com 301-redirects to www.leanix.net and its former api, app and docs hostnames no longer resolve. The successor API surface is profiled separately under the LeanIX record.
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
-- **Status:** Acquired (by Zylo, 2021)
+**Areas:** Acquired · License Management · SaaS Management · Shadow IT · SMP · Software Asset Management · Spend Optimization
 
-## Tags:
+## Cleanshelf on APIs.io (historical record)
 
- - Acquired, License Management, SaaS Management, Shadow IT, SMP, Software Asset Management, Spend Optimization
+Everything profiled for Cleanshelf is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cleanshelf/](https://apis.io/providers/cleanshelf/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-27
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON-LD (1)
 
-### Zylo Platform API (successor)
-The successor to Cleanshelf, exposing SaaS application discovery, inventory, license, contract, and spend data so enterprises can integrate Zylo with finance, procurement, and IT systems.
+Linked-data contexts for the provider's vocabulary.
 
-**Human URL:** [https://developer.zylo.com/](https://developer.zylo.com/)
+- [Cleanshelf Context](https://apis.io/jsonld/cleanshelf/cleanshelf-context/)
 
-#### Tags:
+#### Governance rules (1)
 
- - License Management, SaaS Management, Spend
+Spectral rulesets for the provider's contracts.
 
-### Zylo Legacy API (Cleanshelf-era)
-Legacy v1.0 endpoints retained from the original Cleanshelf product line. New integrations should use the modern Zylo Platform API.
+- [Cleanshelf API Rules](https://apis.io/rules/cleanshelf/cleanshelf-rules/)
 
-**Human URL:** [https://developer.zylo.com/v1.0/reference/zylo-legacy-api](https://developer.zylo.com/v1.0/reference/zylo-legacy-api)
+#### Security (3)
 
-#### Tags:
+Authentication, trust centre, and vulnerability disclosure.
 
- - Cleanshelf, Legacy
+- [Cleanshelf Domain Security](https://apis.io/security/cleanshelf/cleanshelf-domain-security/)
+- [Moved to /providers/cleanshelf/](https://apis.io/security/cleanshelf/cleanshelf-trust-center/)
+- [Cleanshelf Vulnerability Disclosure](https://apis.io/security/cleanshelf/cleanshelf-vulnerability-disclosure/)
 
-## Common Properties
+#### Plans and pricing (1)
 
-- [Website](https://zylo.com/)
-- [Acquisition Announcement](https://zylo.com/news/zylo-acquires-cleanshelf/)
-- [Application](https://app.zylo.com/)
-- [Developer Portal](https://developer.zylo.com/)
-- [Privacy Policy](https://zylo.com/privacy-policy/)
-- [Terms of Service](https://zylo.com/legal/)
-- [Support](https://help.zylo.com/)
-- [JSON-LD Context](json-ld/cleanshelf-context.jsonld)
-- [Spectral Ruleset](rules/cleanshelf-rules.yml)
-- [Naftiko Capabilities](capabilities/cleanshelf-capabilities.yml)
+Published plans, tiers and prices.
 
-## Maintainers
+- [Cleanshelf Plans Pricing](https://apis.io/plans/cleanshelf/cleanshelf-plans-pricing/)
 
-**FN:** Kin Lane
+#### Rate limits (1)
 
-**Email:** kin@apievangelist.com
+Published request limits.
+
+- [Cleanshelf Rate Limits](https://apis.io/rate-limits/cleanshelf/cleanshelf-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Cleanshelf Finops](https://apis.io/finops/cleanshelf/cleanshelf-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.leanix.net/en/)
+- [Blog](https://www.leanix.net/en/blog)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cleanshelf: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cleanshelf/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
